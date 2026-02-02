@@ -53,4 +53,12 @@ func ControlStructures() {
 	for _, value := range slice {
 		fmt.Printf("Value: %s \n", value)
 	}
+
+	// for a better performance
+	// check the following video:
+	// https://youtu.be/cHumi9vPuYY
+
+	for index := range slice {
+		fmt.Printf("Index: %d, Value: %s \n", index, slice[index])
+	}
 }
